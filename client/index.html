@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>House Price Prediction</title>
+	</head>
+	<body>
+		<h1>House Price Prediction</h1>
+		<form action="http://127.0.0.1:5000/predict_home_price" method="post">
+		<table cellpadding="5">
+			<tr>
+				<td>Location:</td>
+				<td><input type="text" name="location" list="locations" autocomplete="off" placeholder="Select Location"/></td>
+			</tr>
+			<tr>
+				<td>Area: </td>
+				<td><input type="text" name="squareft"></td>
+			</tr>
+			<tr>
+				<td>BHK: </td>
+				<td><input type="text" name="bhk"></td>
+			</tr>
+			<tr>
+				<td>Bath Room: </td>
+				<td><input type="text" name="bath"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Get Price" style="background:#0f0;height:30px;width:100px;"></td>
+			</tr>
+		</table>
+		<datalist id="locations">
+			<option>Kothanur</option>
+			<option>Whitefield</option>
+			<option>Old Airport Road</option>
+			<option>Rajaji Nagar</option>
+		</datalist>
+		</form>
+	</body>
+</html>
